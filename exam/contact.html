@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body onload="DisplayProfile()">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="lists.html">Lists</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Contact</h1>
+    <div id="contact-form">
+      First name
+      <form name="Login">
+        <input type="text" name="fName" id="FN" /> <br />
+
+        Last name <br />
+        <input type="text" name="lName" id="LN" /> <br />
+
+        Age <br />
+        <input type="text" name="ageField" id="age" /> <br />
+
+        Email <br />
+        <input type="text" name="email" id="e" /><br />
+
+        City <br />
+        <input type="text " name="city" id="city" />
+
+        <input
+          type="submit"
+          name="sub"
+          value="Submit"
+          onclick="UpdateProfile()"
+        />
+      </form>
+    </div>
+
+    <script type="text/javascript">
+      class Profile {
+        setProfile(fn, ln, a, e, c) {
+          this.fname = fn;
+          this.lname = ln;
+          this.age = a;
+          this.email = e;
+          this.city = c;
+
+          this.saveProfile();
+        }
+        getProfile() {
+          document.getElementById("FN").value =
+            localStorage.getItem("firstname");
+          document.getElementById("LN").value =
+            localStorage.getItem("lastname");
+          document.getElementById("age").value = localStorage.getItem("age");
+          document.getElementById("e").value = localStorage.getItem("email");
+          document.getElementById("city").value = localStorage.getItem("city");
+        }
+        saveProfile() {
+          let storeFName = document.getElementById("FN").value;
+          localStorage.setItem("firstname", storeFName);
+          let storeLName = document.getElementById("LN").value;
+          localStorage.setItem("lastname", storeLName);
+          let storeAge = document.getElementById("age").value;
+          localStorage.setItem("age", storeAge);
+          let storeEmail = document.getElementById("e").value;
+          localStorage.setItem("email", storeEmail);
+          let storeCity = document.getElementById("city").value;
+          localStorage.setItem("city", storeCity);
+          alert("Your information has been stored locally.");
+        }
+      }
+
+      function UpdateProfile() {
+        myProfile = new Profile();
+        myProfile.setProfile();
+      }
+
+      function DisplayProfile() {
+        x = new Profile();
+        x.getProfile();
+      }
+    </script>
+  </body>
+</html>

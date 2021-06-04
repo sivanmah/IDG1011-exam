@@ -1,0 +1,156 @@
+[
+    {
+        "name": "Eirik Brenna",
+        "age": "21",
+        "city": "Tønsberg",
+        "category": "Friend"
+    },
+    {
+        "name": "Håvard",
+        "age": "20",
+        "city": "Gjøvik",
+        "category": "Friend"
+    },
+
+    {
+        "name": "Cicero",
+        "age": "19",
+        "city": "Stockholm",
+        "category": "Friend"
+    },
+        
+    {
+        "name": "Sander",
+        "age": "20",
+        "city": "Gjøvik",
+        "category": "Friend"
+    },
+
+        
+    {
+        "name": "Eirik Breen",
+        "age": "21",
+        "city": "Gjøvik",
+        "category": "Friend"
+    },
+
+        
+    {
+        "name": "Sabir",
+        "age": "60",
+        "city": "Gjøvik",
+        "category": "Family"
+    },
+
+        
+    {
+        "name": "Nashmil",
+        "age": " 52",
+        "city": "Gjøvik",
+        "category": "Family"
+    },
+
+        
+    {
+        "name": "Siver",
+        "age": "26",
+        "city": "Gjøvik",
+        "category": "Family"
+    },
+
+        
+    {
+        "name": "Abdullah",
+        "age": "85",
+        "city": "Erbil",
+        "category": "Family"
+    },
+
+        
+    {
+        "name": "Ari",
+        "age": "54",
+        "city": "Erbil",
+        "category": "Family"
+    },
+
+        
+    {
+        "name": "Golnam",
+        "age": "58",
+        "city": "Erbil",
+        "category": "Family"
+    },
+
+        
+    {
+        "name": "Michael",
+        "age": "20",
+        "city": "New York",
+        "category": "Friend"
+    },
+
+        
+    {
+        "name": "Lincoln",
+        "age": "20",
+        "city": "New York",
+        "category": "Friend"
+    },
+
+        
+    {
+        "name": "Walter",
+        "age": "20",
+        "city": "Albuquerque",
+        "category": "Friend"
+    },
+
+        
+    {
+        "name": "Jesse",
+        "age": "20",
+        "city": "Albuquerque",
+        "category": "Friend"
+    },
+
+        
+    {
+        "name": "Gordon",
+        "age": "54",
+        "city": "London",
+        "category": "Friend"
+    },
+
+        
+    {
+        "name": "Gus",
+        "age": "50",
+        "city": "Albuquerque",
+        "category": "Friend"
+    },
+
+        
+    {
+        "name": "Amogus",
+        "age": "21",
+        "city": "Sussex",
+        "category": "Friend"
+    },
+
+        
+    {
+        "name": "Joe",
+        "age": "34",
+        "city": "Los Angeles",
+        "category": "Friend"
+    },
+
+        
+    {
+        "name": "Leon",
+        "age": "",
+        "city": "Washington",
+        "category": "Friend"
+    }
+]

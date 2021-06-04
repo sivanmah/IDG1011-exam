@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a class="active" href="lists.html">Lists</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Category</th>
+        </tr>
+        </thead>
+        <tbody id=list-data></tbody>
+    <script>
+        fetch("assets/list.json").then(
+            res=>{
+                res.json().then(
+                    data=>{
+                        console.log(data);
+                        if(data.length >0){
+                            var temp = "";
+                            data.forEach((u)=>{
+                                temp +="<tr>";
+                                temp +="<td>"+u.name+"</td>";
+                                temp +="<td>"+u.age+"</td>";
+                                temp +="<td>"+u.city+"</td>";
+                                temp +="<td>"+u.category+"</td>";
+                            })
+                            document.getElementById("list-data").innerHTML = temp;
+                        }
+                    }
+                )
+            }
+        )
+    </script>
+</body>
+</html>
